@@ -29,8 +29,8 @@ objClass(async function () {}) // AsyncFunction
 
 Requires `node >= 4.0.0`.
 
-[npm-url]: https://npmjs.org/package/node-object-class
-[npm-image]: http://img.shields.io/npm/v/node-object-class.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/obj-class
+[npm-image]: http://img.shields.io/npm/v/obj-class.svg?style=flat-square
 [daviddm-url]: https://david-dm.org/chrisyip/node-object-class
 [daviddm-image]: http://img.shields.io/david/chrisyip/node-object-class.svg?style=flat-square
 [travis-url]: https://travis-ci.org/chrisyip/node-object-class
