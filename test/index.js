@@ -44,7 +44,11 @@ test('functions', t => {
   }
 
   try {
-    t.equal(objClass(eval('(function*(){})')), '[object GeneratorFunction]')
+    if (semver.gte(nodeVersion, '6.0.0')) {
+      t.equal(objClass(eval('(function*(){})')), '[object GeneratorFunction]')
+    } else {
+      t.equal(objClass(eval('(function*(){})')), '[object Function]')
+    }
   } catch (e) {
     t.skip('Generator function is unsupported for current node version')
   }
@@ -66,7 +70,11 @@ test('functions', t => {
   }
 
   try {
-    t.equal(objClass(eval('(function*(){})')), 'GeneratorFunction')
+    if (semver.gte(nodeVersion, '6.0.0')) {
+      t.equal(objClass(eval('(function*(){})')), 'GeneratorFunction')
+    } else {
+      t.equal(objClass(eval('(function*(){})')), 'Function')
+    }
   } catch (e) {
     t.skip('Generator function is unsupported for current node version')
   }
