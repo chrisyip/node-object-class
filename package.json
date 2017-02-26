@@ -1,0 +1,27 @@
+{
+  "name": "obj-class",
+  "version": "1.0.0",
+  "description": "Get object class name string",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisyip/node-object-class.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisyip/node-object-class/issues"
+  },
+  "homepage": "https://github.com/chrisyip/node-object-class#readme",
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "semver": "^5.3.0",
+    "tape": "^4.6.3"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}

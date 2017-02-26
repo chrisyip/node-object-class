@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - 7.6
+  - 7.5
+  - 6
+  - 5
+  - 4
+matrix:
+  fast_finish: true
+install:
+  - npm install -g codecov
+script:
+  - npm run test
+  - codecov
